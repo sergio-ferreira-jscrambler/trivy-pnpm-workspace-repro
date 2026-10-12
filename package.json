@@ -1,0 +1,5 @@
+{
+  "name": "trivy-pnpm-workspace-repro",
+  "private": true,
+  "packageManager": "pnpm@11.27.0"
+}

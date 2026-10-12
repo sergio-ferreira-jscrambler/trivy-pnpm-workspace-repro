@@ -1,0 +1,32 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+  injectWorkspacePackages: true
+
+importers:
+
+  .: {}
+
+  packages/service:
+    dependencies:
+      repro-shared:
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/shared:
+    dependencies:
+      '@xmldom/xmldom':
+        specifier: 0.8.13
+        version: 0.8.13
+
+packages:
+
+  '@xmldom/xmldom@0.8.13':
+    resolution: {integrity: sha512-KRYzxepc14G/CEpEGc3Yn+JKaAeT63smlDr+vjB8jRfgTBBI9wRj/nkQEO+ucV8p8I9bfKLWp37uHgFrbntPvw==}
+    engines: {node: '>=10.0.0'}
+
+snapshots:
+
+  '@xmldom/xmldom@0.8.13': {}
